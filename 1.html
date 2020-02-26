@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Media queries 2 Exercise 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <script src="assets/script.js" defer type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="1.html" class="logo">Logo</a>
+        <div id="menu">
+            <a href="2.html">Shopping List</a>
+            <a href="3.html">Recepies</a>
+            <a href="4.html">Forum</a>
+            <a href="5.html">PROchat</a>
+            <a href="6.html">something</a>
+        </div>
+        <a href="javascript:void(0);" class="burger" onclick="reveal()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <section id="recipesMenu" class="gridContainer" style="display: grid;">
+        <button id="recipeMeat" class="item item1" onclick="meatMenu()">Meat</button>
+        <button id="recipeVegetarian" class="item item2" onclick='vegetarianMenu()'>Vegetarian</button>
+        <button id="recipeSoup" class="item item3">Soup</button>
+        <button id="recipeQuickMeal" class="item item4">Quick meal</button>
+    </section>
+
+    <section class="recipeContainerMeat" id="meatMenu">
+        <a href="2.html" class="recipe" onclick="">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Pekinese hotwings</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p>Sugar: 15g</p>
+            <p>Fat: 80g</p>
+            <p id="calories">Calories: </p>
+        </a>
+
+        <div class="recipe">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Cantonese noodles</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p class="move">Sugar: 10g</p>
+            <p>Fat: 70g</p>
+            <p id="calories">Calories: </p>
+        </div>
+
+        <div class="recipe">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Pekinese soup</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p>Sugar: 20g</p>
+            <p>Fat: 100g</p>
+            <p id="calories">Calories: </p>
+        </div>
+    </section>
+
+    <section class="recipeContainerVegetarian" id="vegetarianMenu">
+        <div class="recipe">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Pekinese hotwings</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p>Sugar: 15g</p>
+            <p>Fat: 80g</p>
+            <p id="calories">Calories: </p>
+        </div>
+
+        <div class="recipe">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Cantonese noodles</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p class="move">Sugar: 10g</p>
+            <p>Fat: 70g</p>
+            <p id="calories">Calories: </p>
+        </div>
+
+        <div class="recipe">
+            <img class="pictureOfFood" src="" alt="PictureOfFood">
+            <p class="name">Pekinese soup</p>
+            <div>
+                <p class="portion"></p>
+                <img class="portionIcon" src="" alt="portions">
+            </div>
+            <p>Sugar: 20g</p>
+            <p>Fat: 100g</p>
+            <p id="calories">Calories: </p>
+        </div>
+    </section>
+
+    <section id="soupMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section id="quickmealMenu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <button id="back" class="back" onclick="back()" style="display: none;">
+        Back
+    </button>
+</body>

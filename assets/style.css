@@ -124,3 +124,19 @@
 
 /*Forum*/
 
+/*groceries*/
+
+.groceries{
+    grid-template-columns: auto auto auto auto;
+    grid-auto-columns: 1fr
+}
+
+.grocery{
+    padding: 20px;
+}
+
+.grContainer{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+}

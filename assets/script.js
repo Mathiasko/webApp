@@ -32,8 +32,6 @@ function meatMenu() {
     }
 
     on = 'meat';
-
-
 }
 
 function vegetarianMenu() {
