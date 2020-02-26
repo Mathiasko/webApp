@@ -117,7 +117,12 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
+    padding: 0 20px;
     margin: auto;
+    background-size: contain;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .pictureOfFood {
