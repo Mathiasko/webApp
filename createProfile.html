@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
     <script src="assets/script.js" defer type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav class="navigation">
-        <a href="1.html" class="logo">Logo</a>
+        <p class="title">Diabetes foreningen</p>
         <div id="menu">
+            <a href="index.html">Home</a>
             <a href="createProfile.html">Create Profile</a>
+            <a href="recipes.html">Recipes</a>
             <a href="shoppingList.html">Shopping List</a>
             <a href="forum.html">Forum</a>
-            <a href="5.html">PROchat</a>
+            <a href="proChat.html">PROchat</a>
             <a href="users.html">Users</a>
-            <a href="6.html">something</a>
         </div>
         <a href="javascript:void(0);" class="burger" onclick="reveal()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
 
-    <div>Create Profile</div>
-    <p>Name</p>
-    <input id="name" type="text">
-    <p>Age</p>
-    <input id="age" type="number">
-
+    <h1>Create Profile</h1>
+    <p class="label">Name</p>
+    <input class="input" id="name" type="text">
+    <p class="label">Age</p>
+    <input class="input"  id="age" type="number">
+    <p class="label">Gender</p>
     <div id="gender" class="gender">
         <p class="center">Man</p>
         <div class="slidecontainer">   
@@ -40,20 +42,22 @@
         <p class="right center">Woman</p>
     </div>
 
-    <p>Height</p>
-    <input id="height" type="number">
+    <p class="label">Height</p>
+    <input class="input"  id="height" type="number">
 
-    <p>Weight</p>
-    <input id="weight" type="number">
-
-    <button onclick="create()">
-        Create <br>
-        Profile
-    </button>
-
-    <button onclick="showUsers()">
-        Show users
-    </button>
-    <p id="output"></p>
+    <p class="label">Weight</p>
+    <input class="input"  id="weight" type="number">
+<br>
+    <div class="buttons">
+        <button class="submit" onclick="create()">
+            Create <br>
+            Profile
+        </button>
     
+        <button class="submit" onclick="showUsers()">
+            Show <br> users
+        </button>
+        <p id="output"></p>
+    </div>
+
 </body>

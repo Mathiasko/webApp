@@ -5,6 +5,7 @@
     <title>Media queries 2 Exercise 2</title>
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
     <link href="assets/style.css" rel="stylesheet" type="text/css">
     <script src="assets/script.js" defer type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,24 +13,25 @@
 
 <body>
     <nav class="navigation">
-        <a href="1.html" class="logo">Logo</a>
+        <p class="title">Diabetes foreningen</p>
         <div id="menu">
+            <a href="index.html">Home</a>
             <a href="createProfile.html">Create Profile</a>
+            <a href="recipes.html">Recipes</a>
             <a href="shoppingList.html">Shopping List</a>
             <a href="forum.html">Forum</a>
-            <a href="5.html">PROchat</a>
+            <a href="proChat.html">PROchat</a>
             <a href="users.html">Users</a>
-            <a href="6.html">something</a>
         </div>
         <a href="javascript:void(0);" class="burger" onclick="reveal()">
             <i class="fa fa-bars"></i>
         </a>
     </nav>
     <section id="recipesMenu" class="gridContainer" style="display: grid;">
-        <button id="recipeMeat" class="item item1" onclick="meatMenu()">Meat</button>
-        <button id="recipeVegetarian" class="item item2" onclick='vegetarianMenu()'>Vegetarian</button>
-        <button id="recipeSoup" class="item item3">Soup</button>
-        <button id="recipeQuickMeal" class="item item4">Quick meal</button>
+        <a class="align" id="recipeMeat" class="item item1" onclick="meatMenu()">Meat</a>
+        <a class="align" id="recipeVegetarian" class="item item2" onclick='vegetarianMenu()'>Vegetarian</a>
+        <a class="align" id="recipeSoup" class="item item3">Soup</a>
+        <a class="align" id="recipeQuickMeal" class="item item4">Quick meal</a>
     </section>
 
     <section class="recipeContainerMeat" id="meatMenu">
