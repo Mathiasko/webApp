@@ -87,3 +87,21 @@ function tips(){
     document.getElementById("ing").classList.remove('show');
     document.getElementById("dir").classList.remove('show');
 }
+
+function meatGroceries(){
+    document.getElementById("groceryMeat").classList.add('showGrid');
+    document.getElementById("groceryVegetable").classList.remove('showGrid');
+    document.getElementById("groceryFruit").classList.remove('showGrid');
+}
+
+function vegetableGroceries(){
+    document.getElementById("groceryVegetable").classList.add('showGrid');
+    document.getElementById("groceryMeat").classList.remove('showGrid');
+    document.getElementById("groceryFruit").classList.remove('showGrid');
+}
+
+function friutGroceries(){
+    document.getElementById("groceryFruit").classList.add('showGrid');
+    document.getElementById("groceryVegetable").classList.remove('showGrid');
+    document.getElementById("groceryMeat").classList.remove('showGrid');
+}

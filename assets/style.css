@@ -128,15 +128,22 @@
 
 .groceries{
     grid-template-columns: auto auto auto auto;
-    grid-auto-columns: 1fr
 }
 
 .grocery{
     padding: 20px;
 }
 
+.groceriesContainer{
+    display: none;
+    grid-gap: 15px;
+}
+
 .grContainer{
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto auto;
+}
+.showGrid{
+    display: grid;
 }
