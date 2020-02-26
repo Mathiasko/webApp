@@ -105,3 +105,49 @@ function friutGroceries(){
     document.getElementById("groceryVegetable").classList.remove('showGrid');
     document.getElementById("groceryMeat").classList.remove('showGrid');
 }
+person= [
+    {
+        name: 'Jhon',
+        age: '48',
+        height: '168',
+        weight: '86'
+    },
+    {
+        name: 'Mariella',
+        age: '28',
+        height: '158',
+        weight: '66'
+    },
+    {
+        name: 'Booster',
+        age: '99',
+        height: '200',
+        weight: '80'
+    },
+    {
+        name: 'Bernardita',
+        age: '46',
+        height: '178',
+        weight: '96'
+    }
+]
+
+function create(){
+    let name    = document.getElementById('name').value
+    let age     = document.getElementById('age').value
+    let height  = document.getElementById('height').value
+    let weight  = document.getElementById('weight').value
+    person.push({name: name, age: age, height: height, weight: weight})
+    console.log(person)
+}
+
+function showUsers(){
+    for (i= 0; i<person.length; i++){
+        document.getElementById('output').innerHTML+= 'Name: ' + person[i].name + '</br>';
+        document.getElementById('output').innerHTML+= 'Age: ' + person[i].age + '</br>';
+        document.getElementById('output').innerHTML+= 'Height: ' + person[i].height + '</br>';
+        document.getElementById('output').innerHTML+= 'Weight: ' + person[i].weight + '</br>';
+        document.getElementById('output').innerHTML+= '</br>'
+    }
+    console.log(person)
+}

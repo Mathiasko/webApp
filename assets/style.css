@@ -147,3 +147,44 @@
 .showGrid{
     display: grid;
 }
+
+.genderSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+  }
+
+.genderSlider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #E01B22; /* Green background */
+    border-radius: 100%;
+
+  }
+.gender{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.slidecontainer{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
