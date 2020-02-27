@@ -13,6 +13,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-size: 15px;
+}
+
 .navigation {
     overflow: hidden;
     background-color: #ff5549;
@@ -55,6 +59,14 @@ h1{
 
 /*recepies*/
 
+.pictureOfFood{
+    display: block;
+    max-width:130px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: auto ;
@@ -91,6 +103,7 @@ h1{
     align-items: center;
 }
 
+
 .logo {
     height: 100px;
 }
@@ -107,22 +120,43 @@ h1{
 .recipeContainerMeat, .recipeContainerVegetarian {
     display: none;
     grid-gap: 20px;
-    width: 80%;
     margin: auto;
     padding-top: 50px;
 }
 
 .recipe {
-    border: solid red 2px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 15px;
-    padding: 0 20px;
     margin: auto;
     background-size: contain;
     justify-content: center;
     align-content: center;
-    
+    background-color: #ff554983;
+    box-shadow:0px 7px 12px #ff70665b;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;   
+}
+
+.slider div{
+    padding: 20px;
+    margin-left: 10px;
+    background-color: rgba(205, 92, 92, 0.24);
+}
+.active{
+    border-bottom: solid red;
+}
+
+.ul{
+    width: 90%;
+    text-decoration: double;
+}
+
+.ol{
+    width: 90%;
 }
 
 .pictureOfFood {
@@ -132,7 +166,8 @@ h1{
 
 .name {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
+    margin-top: 10px;
 }
 
 .move {
@@ -142,14 +177,43 @@ h1{
 
 .back {
     display: none;
+    padding: 10px;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    border-radius: 100%;
+    border: none;
+    background-color: #ff5549;
+    text-decoration: none;
+    color: white;
 }
 
 .ingredients {
     display: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.backb{
+    padding: 10px;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    border-radius: 100%;
+    border: none;
+    background-color: #ff5549;
+}
+.backb a{
+    text-decoration: none;
+    color: white;
 }
 
 .directions {
     display: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
 }
 
 .tips {
@@ -190,6 +254,8 @@ h1{
 
 .grocery {
     padding: 20px;
+    background-color: rgba(205, 92, 92, 0.24);
+    border: none;
 }
 
 .groceriesContainer {

@@ -72,20 +72,29 @@ function back() {
 
 function ingredients(){
     document.getElementById("ing").classList.add('show');
+    document.getElementById("ingredients").classList.add('active');
     document.getElementById("dir").classList.remove('show');
+    document.getElementById("directions").classList.remove('active');
     document.getElementById("tip").classList.remove('show');
+    document.getElementById("tips").classList.remove('active');
 }
 
 function directions(){
     document.getElementById("dir").classList.add('show');
+    document.getElementById("directions").classList.add('active');
     document.getElementById("ing").classList.remove('show');
+    document.getElementById("ingredients").classList.remove('active');
     document.getElementById("tip").classList.remove('show');
+    document.getElementById("tips").classList.remove('active');
 }
 
 function tips(){
     document.getElementById("tip").classList.add('show');
+    document.getElementById("tips").classList.add('active');
     document.getElementById("ing").classList.remove('show');
+    document.getElementById("ingredients").classList.remove('active');
     document.getElementById("dir").classList.remove('show');
+    document.getElementById("directions").classList.remove('active');
 }
 
 function meatGroceries(){
