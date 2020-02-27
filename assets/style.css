@@ -113,8 +113,15 @@ h2{
 }
 
 .item {
-    border: 5px solid red;
+    border: 5px solid rgba(196, 59, 59, 0.616);
     height: 130px;
+}
+
+.forumHid{
+    display: none;
+}
+.forumShow{
+    display: block;
 }
 
 .recipeContainerMeat, .recipeContainerVegetarian {

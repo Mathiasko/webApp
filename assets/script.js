@@ -160,3 +160,7 @@ function showUsers(){
     }
     console.log(person)
 }
+
+function showIMG() {
+    document.getElementById("forum").classList.add('forumShow')
+}
